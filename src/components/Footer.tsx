@@ -14,6 +14,7 @@ const navigation = {
           height="100%"
           {...props}
           version="1.1"
+          color="#fff"
           viewBox="0 0 512 512"
           width="100%"
           xmlSpace="preserve"
@@ -54,7 +55,7 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer id="contact" className="bg-white">
+    <footer id="contact" className="bg-gray-900">
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
         <nav
           className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
@@ -64,7 +65,7 @@ export default function Footer() {
             <div key={item.name} className="pb-6">
               <a
                 href={item.href}
-                className="text-sm leading-6 underline text-gray-600 hover:text-gray-900"
+                className="text-sm leading-6 underline text-gray-300 hover:text-white"
               >
                 {item.name}
               </a>
@@ -79,12 +80,19 @@ export default function Footer() {
               className="text-gray-400 hover:text-gray-500"
             >
               <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
+              <item.icon className="h-6 w-6" fill="#fff" aria-hidden="true" />
             </a>
           ))}
         </div>
-        <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-          &copy; 2020 Your Company, Inc. All rights reserved.
+        <p className="mt-10 text-center text-xs leading-5 text-white">
+          &copy; {new Date().getFullYear()} Site desenvolvido por{" "}
+          <a
+            href="https://instagram.com/costaa_szz"
+            target="_blank"
+            className="underline font-bold"
+          >
+            Kauan Costa
+          </a>
         </p>
       </div>
     </footer>
