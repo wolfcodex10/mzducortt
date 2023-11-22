@@ -2,13 +2,18 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-const navigation = [{ name: "Mz Ducortt", href: "#" }];
+const navigation = [
+  { name: "Inicio", href: "#" },
+  { name: "Serviços", href: "#products" },
+  { name: "Perguntas Frequentes", href: "#faq" },
+  { name: "Contato", href: "#contact" },
+];
 
 export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-gray-900">
+    <div id="hero" className="bg-gray-900">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
           className="flex items-center justify-between p-6 lg:px-8"
@@ -42,7 +47,11 @@ export default function Hero() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-white">
+            <a
+              href="https://api.whatsapp.com/send/?phone=5511946306911"
+              target="_blank"
+              className="text-sm font-semibold leading-6 text-white"
+            >
               Agendar um horário
               <span aria-hidden="true">&rarr;</span>
             </a>
@@ -89,7 +98,8 @@ export default function Hero() {
                 </div>
                 <div className="py-6">
                   <a
-                    href="#"
+                    href="https://api.whatsapp.com/send/?phone=5511946306911"
+                    target="_blank"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800"
                   >
                     Agendar um horário
@@ -144,13 +154,15 @@ export default function Hero() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="#"
+                href="https://api.whatsapp.com/send/?phone=5511946306911"
+                target="_blank"
                 className="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
               >
                 Entrar em contato
               </a>
               <a
-                href="#"
+                href="https://api.whatsapp.com/send/?phone=5511946306911"
+                target="_blank"
                 className="text-sm font-semibold leading-6 text-white"
               >
                 Saber mais <span aria-hidden="true">→</span>

@@ -3,7 +3,7 @@ const products = [
     id: 1,
     name: "Corte",
     color: "25 minutos de duração",
-    href: "#",
+    href: "https://api.whatsapp.com/send/?phone=5511946306911",
     imageSrc: "/products/corte.jpeg",
     imageAlt: "Corte normal",
     price: "R$30,00",
@@ -12,7 +12,7 @@ const products = [
     id: 2,
     name: "Platinado",
     color: "2h30 de duração",
-    href: "#",
+    href: "https://api.whatsapp.com/send/?phone=5511946306911",
     imageSrc: "/products/platinado.jpeg",
     imageAlt: "Platinado",
     price: "R$100,00",
@@ -21,7 +21,7 @@ const products = [
     id: 3,
     name: "Frisado",
     color: "1h30 de duração",
-    href: "#",
+    href: "https://api.whatsapp.com/send/?phone=5511946306911",
     imageSrc: "/products/frisado.jpeg",
     imageAlt: "Frisado",
     price: "R$90,00",
@@ -30,7 +30,7 @@ const products = [
     id: 4,
     name: "Luzes",
     color: "2h50 de duração",
-    href: "#",
+    href: "https://api.whatsapp.com/send/?phone=5511946306911",
     imageSrc: "/products/luzes.jpeg",
     imageAlt: "Luzes",
     price: "R$80,00",
@@ -39,7 +39,7 @@ const products = [
     id: 5,
     name: "Penteado Seladinho",
     color: "50m de duração",
-    href: "#",
+    href: "https://api.whatsapp.com/send/?phone=5511946306911",
     imageSrc: "/products/penteado-seladinho.jpeg",
     imageAlt: "Penteado Seladinho",
     price: "R$60,00",
@@ -48,7 +48,7 @@ const products = [
     id: 6,
     name: "Sobrancelha",
     color: "5 minutos de duração",
-    href: "#",
+    href: "https://api.whatsapp.com/send/?phone=5511946306911",
     imageSrc: "/products/sobrancelha.jpeg",
     imageAlt: "Sobrancelha",
     price: "R$80,00",
@@ -57,7 +57,7 @@ const products = [
     id: 7,
     name: "Barba",
     color: "20 minutos de duração",
-    href: "#",
+    href: "https://api.whatsapp.com/send/?phone=5511946306911",
     imageSrc: "/products/barba.jpeg",
     imageAlt: "Barba",
     price: "R$80,00",
@@ -66,7 +66,7 @@ const products = [
 
 export default function Products() {
   return (
-    <div className="bg-white">
+    <div id="products" className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <h2 className="text-xl font-bold text-gray-900">
           Nossos cortes diferenciados!
@@ -102,9 +102,10 @@ export default function Products() {
               <div className="mt-6">
                 <a
                   href={product.href}
+                  target="_parent"
                   className="relative flex items-center justify-center rounded-md bg-gradient-to-r from-gray-600 to-gray-900 px-8 py-2 text-sm text-white font-bold"
                 >
-                  Entrar em contato
+                  Estou interessado
                   <span className="sr-only ">, {product.name}</span>
                 </a>
               </div>
