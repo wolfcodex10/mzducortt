@@ -51,7 +51,7 @@ const products = [
     href: "https://api.whatsapp.com/send/?phone=5511946306911",
     imageSrc: "/products/sobrancelha.jpeg",
     imageAlt: "Sobrancelha",
-    price: "R$80,00",
+    price: "R$5,00",
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ const products = [
     href: "https://api.whatsapp.com/send/?phone=5511946306911",
     imageSrc: "/products/barba.jpeg",
     imageAlt: "Barba",
-    price: "R$80,00",
+    price: "R$20,00",
   },
 ];
 
